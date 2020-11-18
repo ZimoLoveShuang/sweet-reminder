@@ -1,0 +1,22 @@
+# 需要注意的是，所有的修改，都填在引号里面
+application:
+  name: '甜蜜提示'
+  mail:
+    host: 'smtp.qq.com' #也可以改成其他的，比如163邮箱
+    port: '465' #也可以改成其他的，比如163邮箱
+    username: '' #username
+    password: '' #password
+    default-encoding: 'utf-8'
+  weather:
+    appid: '' #在www.tianqiapi.com申请的appid
+    appsecret: '' #在www.tianqiapi.com申请的appsecret
+girlfriend:
+  mails:
+    - 'xx@qq.com' # 女票的邮箱，可以写多个
+    - '' # 第二个
+  city: '成都' #你女票所在的城市
+  start_love_date: "2020-05-15" #开始在一起的日期，格式"2020-05-15"，请保持一致
+  date_msg: '我们俩在一起的第%d天' #要不要改，你们看着办，但必须要有%d，可以参考index.py中获取模板消息的函数
+  nickname: 'x妹子' #对你的女票的爱称
+  sweet_nickname: '爱你的xx哥哥' #你在你女票那里的称呼
+
