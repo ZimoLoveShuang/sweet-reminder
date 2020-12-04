@@ -1,4 +1,5 @@
 import requests
+import math
 import yaml
 from datetime import datetime
 import smtplib
@@ -55,7 +56,7 @@ def getMessage():
     if today_avg > tomorrow_avg:
         wdc += '下降'
         wdc += str(abs(tomorrow_avg - today_avg)) + "℃"
-    elif today_avg == today_avg:
+    elif math.isclose(tomorrow_avg, today_avg):
         wdc += '保持不变'
     else:
         wdc += '上升'
